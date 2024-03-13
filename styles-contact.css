@@ -1,0 +1,191 @@
+/*This is my 201 Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 54 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- Beginning of my 201 Contact Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040; */
+  background-image: url("images/Samurai\ Landscape.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.center {
+    width: 600px;
+	padding: 2%;
+    margin: 300px auto;
+ 	background: rgba(119, 120, 197, 0.75); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	position: relative;
+	top: 100;
+	bottom: 100;
+}
+
+.CropPeter { /* playing around with overlapping object */
+	position: absolute;
+	z-index: 1;
+	top: -130px;
+	right: 50px;
+}
+
+.haiku1 {
+	font-family: "router", sans-serif;
+	font-size: 1.5em;
+	width: 500px;
+	padding: 2%;
+	margin: 100px auto;
+	background: rgba(119, 120, 197, 0.75); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	bottom: 0;
+	left: 0;
+}
+
+.haiku2 {
+	font-family: "router", sans-serif;
+	font-size: 1.5em;
+	width: 500px;
+	padding: 2%;
+	margin: 100px auto;
+	background: rgba(119, 120, 197, 0.75); /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	bottom: 0;
+	left: 0;
+}
+
+.logo {
+	width: 400 px;
+	position: fixed;
+	top: 0;
+	left: 30;
+}
+
+.swordpoint {	/* Horizontally center an image scrolling down */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.happyguy {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-family: "ltc-flash", sans-serif;
+	font-size: 2em;
+    margin: 0px auto 10px auto;
+    color: #fff;
+}
+
+h2 {
+	font-family: "ltc-flash", sans-serif;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #fff;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	font-family: "router", sans-serif;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #fff;
+}
+    
+nav {
+	font-family: "router", sans-serif;
+	font-size: 1.5em;
+	width: 600px; /* This is the width of the nav element */
+	margin: 0 auto; /* This centers the entire nav element inside
+	the center div */
+	background: rgba(119, 120, 197, 1); /*.75 is opacity of background color*/
+	color:#fff;
+	text-align: left;
+	margin-top: 2em; /* This adds a bit of space above the nav element */
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: flex;	/* basic animation */
+  	gap: 0.5rem;
+	z-index: 5; /* z-index is basically arrange object +/- */
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+}
+
+a {
+	flex: 1;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+	color: black;
+	background: rgb(255, 255, 255);
+}
